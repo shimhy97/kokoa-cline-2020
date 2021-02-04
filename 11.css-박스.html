@@ -1,0 +1,25 @@
+<!-- 결국 웹사이트 구성하는 모든것이 박스다. -->
+
+<html>
+  <head>
+    <style>
+      div {
+        height: 150px;
+        width: 150px;
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div는 옆에 다른 박스가 오지 못함! 무조건 아래로 감. p도 마찬가지.  요런것들을 block 이라고 부를거다. 대부분의 box들은 block이다.
+         그에 비해 span,img 같은 것들은 바로옆에 다른 태그 위치 가능. 이런것들을 inline이라고 칭할것이다. -->
+    <!-- inline엔 어떤 것들이 있을까? span, a, image 등등. 나머지는 대충 감이 온다. -->
+    <div></div>
+    <div></div>
+    <div></div>
+    <span>HELLO</span>
+    <span>HELLO</span>
+    <span>HELLO</span>
+    <a href="https://www.google.com">link</a>
+  </body>
+</html>

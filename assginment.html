@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <style>
+    body{
+        font-style: italic;
+    
+    }
+        
+        
+        
+    </style>
+  </head>
+  <body>
+    <h1>Create An Account</h1>
+    <form>
+      <label for="First_name"><strong>First name</strong></label>
+      <input id="First_name" type="text" required placeholder="First name" />
+    </br>
+      <label for="Last_name"><strong>Last name </strong></label>
+      <input id="Last_name" type="text" required placeholder="Last name" />
+    </br>
+      <label for="Email"><strong>Email</strong></label>
+      <input id="Email" type="email" required placeholder="Email" />
+    </br>
+      <label for="Username"><strong>Username</strong></label>
+      <input id="Username" type="text" required placeholder="Username" />
+    </br>
+      <label for="Password"><strong>Password</strong></label>
+      <input id="Password" type="password" minlength="10" required placeholder="Password" />
+    </br>
+      <label for="Birth_date"><strong>Birth date</strong></label>
+      <input id="Birth_date" type="date" required placeholder="yyyy/mm/dd" />
+    </br>
+    <label for="Happiness"><strong>How happy are you?</strong></label>
+    <input list="Happiness" type="range" required />
+    <datalist id="Happiness">
+        <option value="0"></option>
+        <option value="10"></option>
+        <option value="20"></option>
+        <option value="30"></option>
+        <option value="40"></option>
+        <option value="50"></option>
+        <option value="60"></option>
+        <option value="70"></option>
+        <option value="80"></option>
+        <option value="90"></option>
+        <option value="100"></option>
+    </datalist>
+</br>
+<label for="color"><strong>What is your favorite color?</strong></label>
+<input type="color" id="color" name="color" value="black">
+</br>
+    <input type="submit" value="Create Account" />
+</form>
+  </body>
+</html>

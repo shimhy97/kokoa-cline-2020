@@ -1,0 +1,28 @@
+<!-- focus-within은 자식이 focused 상태가 되면 부모에 적용하는 state이다. -->
+<html>
+  <head>
+    <style>
+      input {
+        height: 100px;
+        width: 500px;
+        text-align: justify;
+      }
+      /* placeholder의 변경 */
+      input::placeholder {
+        color: green;
+        font-size: 50px;
+      }
+      p::selection {
+        background-color: green;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="text" required placeholder="First name" />
+      <input type="text" required placeholder="second name" />
+      <p>aaaaaaaaaaaaaaaa</p>
+    </form>
+  </body>
+</html>

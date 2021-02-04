@@ -1,0 +1,56 @@
+<!-- 의미없는태그? 의미있는 태그? html의 철학..-->
+
+<!-- 의미 없는 태그.-->
+<!-- div는 박스와 같다. 위아래로 배치하고 싶을떄! -->
+<!DOCTYPE html>
+<!-- 태그와 애트리뷰트의 강력함을 느껴보자 -->
+<html>
+  <head> </head>
+  <body>
+    <form>
+      <label for="profile">Profile photo</label>
+      <input id="profile" type="file" accept=".png,.pdf" />
+    </form>
+
+    <form>
+      <div>
+        <label for="image"><strong>SELECT Image</strong></label>
+        <input id="image" type="file" accept="image/*, pdf" />
+      </div>
+
+      <div>
+        <label for="website"><strong>주소를 입력하세요</strong></label>
+        <input
+          id="website"
+          required
+          placeholder="주소"
+          type="email"
+          size="100"
+        />
+      </div>
+
+      <div>
+        <label for="date"><strong>오늘 날짜</strong></label>
+        <input id="date" type="date" required placeholder="날짜" />
+      </div>
+    </form>
+    <!-- header,main,footer,nav 등등은 div를 대체할 수 있는 기능이다. 단지 이해를 돕기 위해 구분하여 쓰는 SEMANTIC TAG이다. -->
+    <!-- 짧은 텍스트는 p 태그 보단 span 태그를 이용하자. -->
+    <!-- 이처럼, 태그 의미를 이해하게 만드는 태그명들이 많다!! 이들을 활용하여 이해하기 쉬운 html 태그를 쓰자.-->
+
+    <header>
+      <h1>Daily Best TIMES</h1>
+    </header>
+    <main>
+      <p>HELLO!</p>
+    </main>
+    <footer>&copy;<strong>2020NC</strong></footer>
+
+    <nav>sesdsdaf</nav>
+    <hgroup>
+      <h1>sdsd</h1>
+      <h2>sdsd</h2>
+      <h3>sdas</h3>
+    </hgroup>
+  </body>
+</html>

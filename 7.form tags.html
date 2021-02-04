@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- 태그와 애트리뷰트의 강력함을 느껴보자 -->
+<html>
+  <head> </head>
+  <body>
+    <form>
+      <label for="profile">Profile photo</label>
+      <input id="profile" type="file" accept=".png,.pdf" />
+    </form>
+
+    <form>
+      <label for="image"><strong>SELECT Image</strong></label>
+      <input id="image" type="file" accept="image/*, pdf" />
+
+      <br />
+      <label for="website"><strong>주소를 입력하세요</strong></label>
+      <input id="website" required placeholder="주소" type="email" size="100" />
+
+      <br />
+      <label for="date"><strong>오늘 날짜</strong></label>
+      <input id="date" type="date" required placeholder="날짜" />
+
+      <br />
+      <label for="id">ID</label>
+      <input id="id" required placeholder="id" type="text" />
+      <label for="first">성씨</label>
+      <input id="first" required placeholder="First name" type="text" />
+      <label for="name">이름</label>
+      <input id="name" required placeholder="Last name" type="text" />
+      <label for="">비밀번호</label>
+      <input
+        id="name"
+        required
+        placeholder="Password"
+        minlength="10"
+        type="password"
+      />
+      <input type="submit" value="로그인" />
+    </form>
+  </body>
+</html>
+
+<!-- html 구문 형식!! -->
+<tagname required attrname="attrvalue"></tagname>
+
+<!-- label 태그는 form에 질문을 추가할 수 있음, input과 함꼐여야만 동작함! label엔 for, input엔 id -->
+<!-- id란? 어떤 태그에든 넣을 수 있는 attribute이다. 매우 중요! 왜냐? element당 id 하나!!!만 가질 수 있는 unique한 성분이기 때문. -->
+<!-- 다시한번 강조한다. id는 고유해야 한다. 한 태그당 id 하나. -->

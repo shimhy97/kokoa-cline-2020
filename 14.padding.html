@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <style>
+      /* padding은 margin과 반대의 개념으로써, border로부터 박스 안쪽 데이터 까지의 여유공간을 뜻함. */
+      /* 요소끼리의 차별화된 style 지정은 id를 활용한다!!!! ★★★★★★ */
+      html {
+        background-color: orange;
+      }
+      body {
+        /* 시계방향으로 Margin 값 결정. */
+
+        padding: 100px;
+        background-color: pink;
+      }
+      div {
+        padding: 20px;
+      }
+
+      #first {
+        background-color: gray;
+
+        width: 150px;
+        height: 150px;
+    
+      }
+      #second {
+        background-color: yellow;
+        width: 100px;
+        height: 100px;
+      }
+      #third {
+        background-color: palegreen;
+        width: 50px;
+        height: 50px;
+      }
+
+      span {
+        /* display: block; */
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="first">
+      <div id="second">
+        <div id="third">
+          <div id="fourth"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

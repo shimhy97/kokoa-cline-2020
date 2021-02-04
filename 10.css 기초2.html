@@ -1,0 +1,59 @@
+<!-- /* 3가지 규칙기억
+
+CSS가 하는일은 HTML 태그를 가리키는 일이다. 이 글씨는 초록색이다!!
+
+가리키는 행위 자체를 selector라고 한다.
+
+1. HTML의 태그 하나를 납치하여 끌고와서! 중괄호로 연다음! 메챠쿠챠 지정해준다.
+
+2.주의! 속성이름에서 띄어쓰기 없이 -로 이어주기, 세미콜론 까먹지말기.
+
+3.CSS는 순차적인(cascading Code)이기 때문에, 외부 링크와 내부 css가 같은 태그의 같은 속성을 가리킬 때 더 나중에 있는것이 적용된다.  
+즉, 코드의 순서가 결과에  영향을 미친다★ 
+
+4. 어떤속성들이 있는지 모든 것 기억 X
+-->
+
+<html>
+  <head>
+    <link href="abcd.css" rel="stylesheet" />
+    <style>
+      h1 {
+        color: red;
+        font-size: 100px;
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      
+      h2 {
+        color: black;
+        font-size: 100px;
+        font-style: italic;
+        font-weight: 700;
+      }
+      address {
+        text-align: center;
+        color: lime;
+      }
+    </style>
+  </head>
+  <body>
+    <address>www.naver.com</address>
+    <header>
+      <h1>ww</h1>
+      <h2>www</h2>
+    </header>
+    <main>
+      <p>HELLO!</p>
+    </main>
+    <footer>&copy;<strong>2020NC</strong></footer>
+
+    <nav>sesdsdaf</nav>
+    <hgroup>
+      <h1>sdsd</h1>
+      <h2>sdsd</h2>
+      <h3>sdas</h3>
+    </hgroup>
+  </body>
+</html>

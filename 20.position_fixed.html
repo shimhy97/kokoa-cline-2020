@@ -1,0 +1,51 @@
+<!-- fixed를 쓰면, 초기에 출력되는 그 위치로 고정된다!!!★ -->
+
+<html>
+  <head>
+    <style>
+      body {
+        margin: 20px;
+        height: 100vh;
+        width: 2000px;
+        flex-direction: column;
+        background-color: pink;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+        color: white;
+        padding: 10px;
+        margin-left: 10px;
+        background-color: teal;
+      }
+      .different {
+        width: 350px;
+        background-color: royalblue;
+        /* 위치가 고정된다.  스크롤을 변화해도 안움직임. 초기에 그려진 위치에 그대로 고정됨 */
+        /* 원래대로라면 2번째 div는 1번째 div 아래에 온다. 
+        그런데 이때 top 등을 주어 변화시키면 서로 다른 레이어에 있기 때문에 fixed로 다른 레이어 가릴 수 있음. */
+        /* 즉, 주축에 따라. fixed를 사용하면 아닌 레이어를 부수고 항상 그 위치로 고정댐. 가장 위!! */
+        left: 500px;
+        top: 0px;
+        position: fixed;
+      }
+      #second {
+        background: violet;
+      }
+      #third {
+        background: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div>1</div>
+    <div class="different">난 고정이지렁</div>
+    <div id="second">2</div>
+    <div id="third">3</div>
+  </body>
+</html>

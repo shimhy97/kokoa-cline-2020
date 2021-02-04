@@ -1,0 +1,56 @@
+<!-- >를 사용하여 바로 밑에 있는 자식에게만 style을 적용할 수 있다!!!! 고민 해결! -->
+<!-- +를 사용하여 , 안에 있는게 아니라 다음에 오는 형제들에게만 style을 적용할 수 있다. -->
+
+<html>
+  <head>
+    <style>
+      body {
+        height: 10vh;
+        width: 2000px;
+
+        background-color: pink;
+      }
+
+      div {
+        position: relative;
+
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+        color: white;
+        background-color: teal;
+      }
+
+      body > span ~ span:nth-child(2n-1) {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <span>aaaaa</span>
+    <span>aaaaa</span>
+    <span>aaaaa</span>
+    <span>aaaaa</span>
+    <span>aaaaa</span> <span>aaaaa</span> <span>aaaaa</span> <span>aaaaa</span>
+    <div></div>
+    <div></div>
+    <header>
+      <div><span>aaaaa</span></div>
+    </header>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+    <span>6</span>
+    <span>7</span>
+    <span>8</span>
+    <span>9</span>
+    <span>10</span>
+    <span>11</span>
+  </body>
+</html>

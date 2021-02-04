@@ -1,0 +1,50 @@
+<!-- focus-within은 자식이 focused 상태가 되면 부모에 적용하는 state이다. -->
+<html>
+  <head>
+    <style>
+      input:active {
+        background-color: aqua;
+      }
+      input:focus {
+        background-color: blue;
+      }
+      a:visited {
+        color: red;
+      }
+      a:hover {
+        color: teal;
+      }
+      form {
+        background-color: orange;
+        border: 1px solid salmon;
+        display: flex;
+
+        padding: 20px;
+      }
+      form:focus-within {
+        border: 10px solid seagreen;
+      }
+
+      /* 이런것도 된다. 부모의 state에 따라 자식 바꾸기! */
+      #asdf:hover input {
+        background-color: seagreen;
+      }
+
+      /* 두가지 조건을 동시에 만족해야만 state를 적용하는 예제도 가능! */
+      form:hover input:focus {
+        background-color: palevioletred;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.apple.com">Go to Apple</a>
+    <form>
+      <input type="text" required placeholder="First name" />
+      <input type="text" required placeholder="second name" />
+    </form>
+    <form id="asdf">
+      <input type="text" required placeholder="First name" />
+      <input type="text" required placeholder="second name" />
+    </form>
+  </body>
+</html>

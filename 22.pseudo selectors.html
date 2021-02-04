@@ -1,0 +1,61 @@
+<!-- pseudo selector 세부적으로 엘리먼트를 선택해주는 것!★ -->
+<!-- 지금까지는 3가지 방법이 있었다. 태그, 클래스, id -->
+<!-- 그런데 이거 말고 배우는거임.-->
+<html>
+  <head>
+    <style>
+      body {
+        height: 10vh;
+        width: 2000px;
+
+        background-color: pink;
+      }
+
+      div {
+        position: relative;
+
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+        color: white;
+        background-color: teal;
+      }
+      div:nth-child(2),
+      div:nth-child(3),
+      div:nth-child(5) {
+        background-color: green;
+      }
+      body span:nth-child(2n + 1) {
+        background-color: red;
+      }
+      header div span {
+        background-color: blue;
+      }
+      #color {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <header>
+      <div><span id="color">aaaaa</span></div>
+    </header>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+    <span>6</span>
+    <span>7</span>
+    <span>8</span>
+    <span>9</span>
+    <span>10</span>
+    <span>11</span>
+  </body>
+</html>

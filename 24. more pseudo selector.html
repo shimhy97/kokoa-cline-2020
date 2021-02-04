@@ -1,0 +1,66 @@
+<!-- 바로 딱 다음에 오는 형제들에게만 +가 통한다. 바로 딱 다음이 아니라면?? ~를 사용한다! -->
+<!-- 클래스를 지정하지 않고도, CSS를 적용하는 혁신적 방법이 있다??!! -->
+<!-- 태그 : 속성 -->
+<!-- 태그[속성 = "속성명"] -->
+
+<html>
+  <head>
+    <style>
+      body {
+        height: 10vh;
+        width: 2000px;
+
+        background-color: pink;
+      }
+
+      div {
+        position: relative;
+
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+        color: white;
+        background-color: teal;
+      }
+      /* 이러면 required 속성을 가진 input 태그에만 해당 양식이 적용된다. */
+      input:required {
+        border-radius: 1px;
+        border-color: cadetblue;
+        font-style: italic;
+        font-size: 10px;
+      }
+      /* 이러면 placholder 속성이 name으로 끝나는 태그에만 해당 양식이 적용된다.  */
+      /* ~ 말고도 $ ^ 등등 사용 가능 */
+      input[placeholder~="name"] {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" required placeholder="First name" />
+    <input type="text" required placeholder="second name" />
+
+    <span>aaaaa</span>
+    <span>aaaaa</span>
+    <div></div>
+    <div></div>
+    <div><span>aaaaa</span></div>
+    <div>
+      <button>로그인</button>
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+    <span>6</span>
+    <span>7</span>
+    <span>8</span>
+    <span>9</span>
+    <span>10</span>
+    <span>11</span>
+  </body>
+</html>

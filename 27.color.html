@@ -1,0 +1,31 @@
+<!-- //3가지 컬러 시스템 
+    1. 컬러 코드를 통한 지정 
+    2. rgba(252,206,0,1) 여기서 a는 투명도를 말함. -->
+
+<!-- 3. 아래와 같다 -->
+
+<html>
+  <head>
+    <style>
+      /* /메인 컬러를 문서의 :root에 저장 */
+      /* 이 방법의 장점 : 컬러 체인지 한번에 가능 */
+      :root {
+        --main-color: #fcce00;
+      }
+      p {
+        background-color: var(--main-color);
+      }
+      div {
+        display: flex;
+        background-color: var(--main-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <p>asdfasdf</p>
+    <div>asdf</div>
+  </body>
+</html>
+
+<!-- mdn에 사용자 지정css 스타일 검색 ㄱㄱ -->

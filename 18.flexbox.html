@@ -1,0 +1,42 @@
+<!-- 규칙1. 부모 element에게 말하라!! 즉 div를 flexbox로 하고 싶다면 부모인 body를 flex하게 만들자. -->
+<!-- 규칙2. main axis & cross axis  -->
+<!-- 반드시 기억하라. 특정 박스를 flex하게 만들고 싶다면 그 부모에게 말을 해줘야 한다. -->
+
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        margin: 20px;
+        /* vh : 화면 크기에 따라 */
+        height: 100vh;
+        /*main axis에 적용되는 속성들 */
+        justify-content: flex-end;
+        /*cross axis에 적용되는 속성들. body의 height가 없가면 이 명령어는 아마 듣지 않을 것이다. */
+        align-items: center;
+      }
+      div {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        margin: 10px;
+        background-color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+      rosrun
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>

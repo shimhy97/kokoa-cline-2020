@@ -1,0 +1,40 @@
+<!-- block을 inline으로?? 가능!! 반대도 가능!
+이것을 display 속성이라고 한다. -->
+<html>
+  <head>
+    <style>
+      /* ★빈 block을 inline으로 강제로 변경하게 되면 사라진다! 왜? inline은 높이와 폭을 가질 수 없기 떄문이다.★ */
+      /* block(box)의 특징 세가지! 1.margin 2.padding 3. border ★★★★*/
+      /* 브라우저는 자동적으로, 부여하는 스타일 요소들이 있음! important */
+      html {
+        background-color: orange;
+      }
+      body {
+        margin-left: 100px;
+        margin-right: 50px;
+        margin-top: 10px;
+        background-color: pink;
+      }
+      div {
+        /* display: inline; */
+        margin-left: 50px;
+        margin-right: 10px;
+        margin-top: 120px;
+        margin-bottom: 40px;
+
+        height: 300px;
+        width: 150px;
+        background-color: gray;
+      }
+
+      span {
+        /* display: block; */
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>a b c</div>
+    <span>aaa</span>
+  </body>
+</html>

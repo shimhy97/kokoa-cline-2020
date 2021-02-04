@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <style>
+      /* block(box)의 특징 세가지! 1.margin 2.padding 3. border ★★★★*/
+      /* outside of border = margin이다!! */
+      /* ★Collapsing margin -매우 헷갈릴 수 있는 상황!! 위-아래로만 일어남. 경계가 같아서 margin이 같아 졌나 보구나 ㅎㅎ이정도만 */
+      html {
+        background-color: orange;
+      }
+      body {
+        /* 시계방향으로 Margin 값 결정. */
+        margin: 20px 15px 40px 50px;
+        background-color: pink;
+      }
+      div {
+        margin-left: 80px;
+        margin-right: 10px;
+        margin-top: 120px;
+        margin-bottom: 40px;
+
+        height: 300px;
+        width: 150px;
+        background-color: gray;
+      }
+
+      span {
+        /* display: block; */
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>a b c</div>
+    <span>aaa</span>
+  </body>
+</html>
