@@ -1,0 +1,28 @@
+<!-- Transition이란? 어떤 상태에서 어떤 상태로 가는 변화를 애니메이션으로 만든 것. -->
+<!-- state가 없는 쪽에 지정.-->
+<!-- 자주 실수하는 것 중 하나! 항상 변화하는 쪽에도 요소가 있어야 transition이 적용된다. 양쪽 다 두자! -->
+<html>
+  <head>
+    <style>
+      a {
+        color: black;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 10px;
+        /* transition: background-color 1s ease-in-out, color 1s ease-in-out; */
+        /* 혹은 이런것도 가능.*/
+        /* 바꾸려는게 한두개면 지정, 다바꾸려면 그냥 all 치면 됨 */
+        transition: all 1s ease-in-out;
+      }
+      a:hover {
+        color: red;
+        background-color: teal;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#"> Go home </a>
+  </body>
+</html>

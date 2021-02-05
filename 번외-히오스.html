@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @keyframes rotating {
+        from {
+          -ms-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -ms-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      .rotating {
+        -webkit-animation: rotating 2s linear infinite;
+        -moz-animation: rotating 2s linear infinite;
+        -ms-animation: rotating 2s linear infinite;
+        -o-animation: rotating 2s linear infinite;
+        animation: rotating 2s linear infinite;
+      }
+      /*  */
+      @keyframes scaling {
+        from {
+          -ms-transform: scale(1);
+          -moz-transform: scale(1);
+          -webkit-transform: scale(1);
+          -o-transform: scale(1);
+          transform: scale(1);
+        }
+        to {
+          -ms-transform: scale(2);
+          -moz-transform: scale(2);
+          -webkit-transform: scale(2);
+          -o-transform: scale(2);
+          transform: scale(2);
+        }
+      }
+      .scaling {
+        -webkit-animation: scaling 2s linear infinite;
+        -moz-animation: scaling 2s linear infinite;
+        -ms-animation: scaling 2s linear infinite;
+        -o-animation: scaling 2s linear infinite;
+        animation: scaling 2s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        class="rotating scaling"
+        src="C:\Users\shimh\OneDrive\바탕 화면\kokoa-clone-2020\photo.jpg"
+      />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!-- easing 속성 에 대한 자세한 설명? Ceaser 라는 사이트 참조 -->
+<!-- linear, ease-in, ease-out, ease-in-out -->
+<!-- 그러나 나만의 커브를 만들 수 도 있다!! 사이트에 잘 나와있다 -->
+<!-- 그게 바로 cubic-bezier 라는 것이다. 걍 긁어오기만 해라 -->
+
+<html>
+  <head>
+    <style>
+      a {
+        color: black;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 10px;
+
+        transition: all 1s ease-in-out;
+      }
+      a:hover {
+        color: red;
+        background-color: teal;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#"> Go home </a>
+  </body>
+</html>
