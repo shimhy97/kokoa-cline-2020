@@ -1,0 +1,64 @@
+<!-- transformation은 다른 element에 영향을 끼치지 않는다! -->
+<!-- transform mdn -->
+<html>
+  <head>
+    <style>
+      /* 애니메이션 정의하는 부분 */
+      @keyframes Hos {
+        0% {
+          height: 220px;
+          width: 220px;
+          transform: rotateZ(0);
+          background: url("C:/Users/shimh/OneDrive/바탕 화면/kokoa-clone-2020/photo1.jpg");
+        }
+        20% {
+          height: 220px;
+          width: 220px;
+          transform: rotateZ(0);
+          background: url("C:/Users/shimh/OneDrive/바탕 화면/kokoa-clone-2020/photo1.jpg");
+        }
+
+        40% {
+          height: 220px;
+          width: 220px;
+          transform: rotateZ(3600deg) scale(3);
+          background-image: url("C:/Users/shimh/OneDrive/바탕 화면/kokoa-clone-2020/photo.jpg");
+        }
+
+        60% {
+          height: 220px;
+          width: 220px;
+          transform: rotateZ(3600deg) scale(3);
+          background-image: url("C:/Users/shimh/OneDrive/바탕 화면/kokoa-clone-2020/photo.jpg");
+        }
+        80% {
+          transform: rotateZ(0deg) scale(3);
+          background-image: url("C:/Users/shimh/OneDrive/바탕 화면/kokoa-clone-2020/photo2.jpg");
+        }
+        100% {
+          transform: scale(3);
+          background-image: url("C:/Users/shimh/OneDrive/바탕 화면/kokoa-clone-2020/photo2.jpg");
+        }
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      div {
+        height: 220px;
+        width: 220px;
+        color: black;
+        background-image: url("C:/Users/shimh/OneDrive/바탕 화면/kokoa-clone-2020/photo.jpg");
+        text-decoration: none;
+
+        border-radius: 50%;
+        animation: Hos 8s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

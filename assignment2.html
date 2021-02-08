@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        /* height 100vh로 설정하는 부분! */
+        height: 100vh;
+        background-color: tomato;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .outer {
+        background-color: wheat;
+        padding: 40px;
+        width: 500px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 2px solid black;
+      }
+      div > div {
+        background-color: teal;
+        width: 100px;
+        height: 100px;
+        border: 3px solid white;
+      }
+
+      div > div:nth-child(2) {
+        /* width를 100%로 수정하는 부분!! */
+        width: 100%;
+        border: 3px dashed white;
+      }
+    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+  </head>
+  <body>
+    <div class="outer">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

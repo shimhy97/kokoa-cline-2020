@@ -1,4 +1,4 @@
-<!-- 주축은 상하방향, 교차축은 좌우방향 이지만 변경이 가능한 거시다 -->
+<!-- 주축은 좌우방향, 교차축은 상하방향이 디폴트값 이지만 변경이 가능한 거시다 -->
 <!-- div 각각도 역시 flex container로 바꿀 수 있다.즉, 얼마든지 많은 flex부모, 자녀를 만들어 낼 수 있다. -->
 <!-- 주축의 flex direction의 디폴트 값은 row -->
 <html>
@@ -9,9 +9,9 @@
         margin: 20px;
 
         height: 100vh;
-        flex-direction: row-reverse;
+        flex-direction: row;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
       }
       div {
         display: flex;

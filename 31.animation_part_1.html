@@ -3,6 +3,16 @@
 <html>
   <head>
     <style>
+      /* 애니메이션 정의하는 부분 */
+      @keyframes Hos {
+        from {
+          transform: rotateX(0);
+        }
+
+        to {
+          transform: rotateX(360deg) rotateZ(360deg) scale(3);
+        }
+      }
       body {
         display: flex;
         align-items: center;
@@ -15,12 +25,8 @@
         text-decoration: none;
         padding: 3px 5px;
         border-radius: 50%;
-        transition: all 3s ease-in-out;
-      }
-      img:hover {
-        transform: rotateZ(3600deg) scale(3);
-        color: red;
-        background-color: teal;
+
+        animation: Hos 5s ease-in-out infinite;
       }
     </style>
   </head>
