@@ -1,0 +1,189 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+body {
+  background-color: aquamarine;
+  font-family: "Open Sans", sans-serif;
+}
+.main-body {
+  margin: 10px;
+  padding: 30px;
+
+  height: 500px;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-bar {
+  display: flex;
+  flex-direction: row;
+}
+.list-bar__row {
+  width: 33%;
+}
+.list-bar__row:first-child {
+  width: 33%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.list-bar__row:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.playing {
+  margin-top: 40px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.playing__picture {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: orange;
+  border-radius: 10%;
+  border: black solid 2px;
+}
+
+.fa-image {
+  color: white;
+}
+
+.playing__title {
+  margin-left: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.playing__title p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.playing__title span {
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.buttons {
+  margin-top: 40px;
+
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons__play-button {
+  width: 150px;
+  border-radius: 10px;
+  border: 2px solid black;
+  border-bottom-width: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons__play-button i {
+  margin-right: 10px;
+}
+.buttons__play-button:hover {
+  color: green;
+}
+.buttons__play-button:hover span {
+  color: black;
+  font-weight: bold;
+}
+
+.buttons__like-button {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-bottom-width: 4px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons__like-button:hover {
+  color: orangered;
+}
+.buttons__plus-button {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-bottom-width: 4px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons__plus-button:hover .fa-plus {
+  color: orangered;
+}
+.buttons__plus-button:hover {
+  background-color: aqua;
+}
+div[class^="buttons"] :active {
+  transform: translateY(2px);
+}
+
+.playlist {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.playlist__column {
+  padding: 2px;
+  height: 40px;
+  width: 300px;
+  margin: 10px 0px 10px 0px;
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+}
+.playlist__column:hover {
+  border-style: solid;
+  border-color: black;
+  border-width: 1.5px;
+}
+.playlist__column__color {
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  border: 2px solid black;
+}
+
+.playlist__column span:first-child {
+  font-size: 20px;
+}
+
+.playlist__column span:nth-child(3) {
+  font-size: 10px;
+}
+
+.playlist__column:first-child .playlist__column__color {
+  background-color: orangered;
+}
+
+.playlist__column:nth-child(2) .playlist__column__color {
+  background-color: pink;
+}
+.playlist__column:nth-child(3) .playlist__column__color {
+  background-color: blue;
+}
+.playlist__column:nth-child(4) .playlist__column__color {
+  background-color: aqua;
+}

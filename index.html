@@ -5,31 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WelCome to Kokoa Talk</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/fbb6dbb472.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <!-- 긴 클래스 이름을 쓰는게 좋다. -->
-    <div id="status-bar">
+    <!-- 긴 클래스 이름을 쓰는게 좋다. BEM이라고, 좀더 쉽게 읽히는 CSS를 만드는 것이다.-->
+    <!-- 경험상 무엇이 class고 무엇이 id인지 모른다. css와 html을 왔다갔다 할 일이 생김.
+         따라서, 모든 부분에 BEM을 적용하여 class 이름을 만드는 것이 표준 규칙이다. -->
+    <!-- 호불호가 갈리긴 하는데 BEM 가급적 써라. 2가지 비교 해볼것 -->
+    <div class="status-bar">
       <div class="status-bar__column">
         <span>No service</span>
-        <!-- 와이파이 아이콘 -->
+        <i class="fas fa-wifi"></i>
+        <!-- 아이콘을 넣는 방법? 직접 이미지 넣기, or svg 파일형식(좌표 형식으로 되어있는 이미지.)
+        Heroicons 라는 사이트에서, 많은 icon을 제공한다.
+        FontAwsome이라는 사이트에서 매우많은 icon을 제공한다 -->
       </div>
       <div class="status-bar__column">
         <span>18:43</span>
       </div>
       <div class="status-bar__column">
-        <span>110%</span>
-        <!-- 충전 아이콘 -->
+        <span>11%</span>
+        <!-- 이때 아이콘 크기를 키울 수도 있다. fa-사이즈명령어 형식의 클래스명을 넣으면 된다.-->
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <i class="fas fa-bolt fa-lg"></i>
       </div>
     </div>
 
-    <div>
-      <span>Welcome to KakaoTalk</span>
-    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to KakaoTalk</h1>
+      <p class="welcome-header__text">
+        Log in if you have e-mail account.<br />
+        If you don't have, sign up a new account.
+      </p>
+    </header>
 
-    <div>
-      <span
-        >If you have a Kakao Account, log in with email or Phone number.</span
-      >
-    </div>
+    <form class="login-form">
+      <label for="login-ID"></label>
+      <input
+        id="login-ID"
+        required
+        placeholder="Email or phone number"
+        type="text"
+      />
+      <label for="login-password"></label>
+      <input
+        id="login-password"
+        required
+        placeholder="Password"
+        type="password"
+      />
+      <label for="login-submit"></label>
+      <input id="login-submit" type="submit" value="Log In" />
+      <label for="login-signup"></label>
+      <input id="login-signup" type="submit" value="Sign Up" />
+      <a href="#">Find Kakao Account or Password</a>
+    </form>
   </body>
 </html>

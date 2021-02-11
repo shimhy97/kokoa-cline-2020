@@ -1,0 +1,58 @@
+.welcome-header {
+  /* flex를 써도 되지만, text의 정렬의 경우 simple하게 text-align을 쓴다.; */
+  text-align: center;
+  font-size: 20px;
+  margin-top: 70px;
+}
+.welcome-header__title {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.welcome-header__text {
+  font-size: 15px;
+  opacity: 0.7;
+  margin-bottom: 70px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0px 30px 60px 30px;
+}
+.login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+
+  margin-bottom: 20px;
+}
+
+.login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* 로그인form내부의 인풋태그 중 type이 submit이 아닌!!것들만 */
+.login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+.login-form input[type="submit"] {
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+/* 로그인form의 input에 마우스를 올렸을 때, 색이 바뀌도록 하는. */
+.login-form input:focus {
+  border-bottom: 1px solid var(--main-color);
+}
+/* 모든 input에 공통적으로 적용하는 클래스! */
+input:focus {
+  outline: none;
+}
+
+/* 모든 링크는 기본적으로 파란색 밑줄이 지정되어있다. */
+.login-form a {
+  text-align: center;
+  color: rgba(0, 0, 0);
+}
