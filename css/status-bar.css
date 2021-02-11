@@ -1,8 +1,19 @@
 /* 상단바에 대한 css파일을 분리시켰다. 왜? 상단바는 모든 페이지에 들어가니까. */
 
+/* css hack = 크기가 다른 블록들에 대해, 딱 블록 하나만 정 가운데에 놓는 기술.
+이것은 마치 레시피와 같은데, 이상할 수 있지만 어디서든 써먹을 수 있따. 
+방법 :  width33% 설정 후 두번째 컬럼 flex + 센터 위치. 세번째 컬럼 flex + end 위치*/
+
 .status-bar {
+  background-color: whitesmoke;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0px;
+  padding: 5px 0px 0px 0px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 .status-bar__column {
   width: 33%;
@@ -18,7 +29,7 @@
 .status-bar__column:nth-child(3) {
   display: flex;
   justify-content: flex-end;
-
+  margin-right: 10px;
   align-items: center;
 }
 

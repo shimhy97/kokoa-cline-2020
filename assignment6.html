@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>You Are Awesome!</title>
+    <link rel="stylesheet" href="assignment6.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/fbb6dbb472.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <i class="fas fa-list fa-3x"></i>
+        <!-- 아이콘을 넣는 방법? 직접 이미지 넣기, or svg 파일형식(좌표 형식으로 되어있는 이미지.)
+        Heroicons 라는 사이트에서, 많은 icon을 제공한다.
+        FontAwsome이라는 사이트에서 매우많은 icon을 제공한다 -->
+      </div>
+      <div class="status-bar__column">
+        <span>OP.GG</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-shopping-basket fa-3x"></i>
+      </div>
+    </div>
+
+    <header class="search">
+      <div>
+        <input required placeholder="Search Champions..." />
+        <i class="fas fa-search"></i>
+      </div>
+    </header>
+
+    <div class="title">
+      <span>오늘의 챔피언</span>
+    </div>
+
+    <div class="first-box">
+      <div class="first-box__book-picture">
+        <img
+          src="http://opgg-static.akamaized.net/images/lol/champion/Udyr.png?image=c_scale,q_auto,w_140&v=1612855207"
+        />
+      </div>
+
+      <div class="first-box__book-explanation">
+        <div class="first-box__book-title">
+          <span class="first-box__name">우디르</span>
+          <span>종합 평가</span>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+
+        <div class="first-box__btn1">
+          <div class="classify">
+            <span>근접</span>
+          </div>
+          <div class="classify">
+            <span>전사</span>
+          </div>
+        </div>
+
+        <div class="first-box__btn2">
+          <div class="first-box__btn__like">
+            <i class="fab fa-font-awesome-flag"></i>
+          </div>
+          <div class="first-box__btn__book-now">
+            <span>템트리 연구하기</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="title">
+      <span>고성능 정글 챔프</span>
+    </div>
+    <div class="second-box">
+      <div class="second-box__book-list">
+        <img
+          src="http://opgg-static.akamaized.net/images/lol/champion/DrMundo.png?image=c_scale,q_auto,w_140&v=1612855207"
+        />
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
+      <div class="second-box__book-list">
+        <img
+          src="http://opgg-static.akamaized.net/images/lol/champion/Elise.png?image=c_scale,q_auto,w_140&v=1612855207"
+        />
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
+      <div class="second-box__book-list">
+        <img
+          src="http://opgg-static.akamaized.net/images/lol/champion/Viego.png?image=c_scale,q_auto,w_140&v=1612855207"
+        />
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="second-box__book-list">
+        <img
+          src="http://opgg-static.akamaized.net/images/lol/champion/Hecarim.png?image=c_scale,q_auto,w_140&v=1612855207"
+        />
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+
+          <i class="far fa-star"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="title">
+      <span>인기있는 정글 챔프</span>
+    </div>
+    <div class="third-box">
+      <div class="third-box__book-picture">
+        <img
+          src="http://opgg-static.akamaized.net/images/lol/champion/Karthus.png?image=c_scale,q_auto,w_140&v=1612855207"
+        />
+      </div>
+      <div class="third-box__book-explanation">
+        <p>카서스</p>
+
+        <p>
+          카서스는 빠른 정글링과 후반 높은 딜링 기댓값으로 인하여 인기있는
+          챔피언입니다.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

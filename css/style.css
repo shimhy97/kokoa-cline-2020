@@ -3,6 +3,8 @@
 @import "variables.css";
 /* 브라우저의 기본으로 들어있는 css를 삭제!시키는 css파일이다. 우리가 직접 디자인 하는것도 좋은 방법이니깐.
 html에 직접 추가해도 되지만 가급적 css에 css를 직접 추가하는 게 낫다고 한다. */
+/* import 하는 순서도 매우매우 중요하다! */
+
 @import "reset.css";
 @import "status-bar.css";
 @import "login.css";
@@ -10,8 +12,21 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 5px;
   background-color: whitesmoke;
+  height: 1000vh;
 }
 
-/* css hack = 크기가 다른 블록들에 대해, 딱 블록 하나만 정 가운데에 놓는 기술.
-이것은 마치 레시피와 같은데, 이상할 수 있지만 어디서든 써먹을 수 있따. 
-방법 :  width33% 설정 후 두번째 컬럼 flex + 센터 위치. 세번째 컬럼 flex + end 위치*/
+/* 여기부분 참고해라!! */
+.nav {
+  background-color: #f9f9fa;
+  padding: 20px 40px; /* 여기 보고 느끼는거 없냐?*/
+  border-top: 0.5px solid rgba(0, 0, 0, 0.25);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.nav__ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 링크 기본  */
