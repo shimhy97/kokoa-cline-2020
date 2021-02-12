@@ -11,6 +11,7 @@ body {
   padding: 0px 10px 50px 10px;
   background-color: royalblue;
   height: 80px;
+  position: static;
 }
 
 .status-bar__column:nth-child(2) span {
@@ -20,6 +21,7 @@ body {
 
 .search {
   width: 85%;
+  z-index: 1;
   transform: translateX(8.6%);
   background-color: white;
   border-radius: 20px;
@@ -52,7 +54,7 @@ body {
   font-size: 30px;
   font-weight: 800;
   margin-left: 20px;
-  margin-top: 100px;
+  margin-top: 60px;
   margin-bottom: 30px;
 }
 
@@ -175,8 +177,13 @@ body {
   margin-left: 20px;
 }
 
+.third-box__book-picture img {
+  height: 200px;
+  width: 200px;
+}
+
 .third-box__book-explanation {
-  width: 450px;
+  width: 570px;
   height: 225px;
   margin-left: 50px;
   position: relative;
@@ -186,11 +193,11 @@ body {
   font-weight: 900;
   font-size: 200%;
   position: absolute;
-  top: 10px;
+  top: 15px;
 }
 .third-box__book-explanation p:nth-child(2) {
   position: absolute;
-  bottom: 10%;
+  bottom: 50px;
   font-size: 150%;
 }
 .stars {
