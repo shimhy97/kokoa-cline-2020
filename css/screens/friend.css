@@ -1,9 +1,31 @@
-.friend-display-header {
+.friends-display-header {
   background-color: rgba(0, 0, 0, 0.02);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding: 20px;
+  padding: var(--horizontal-space);
+  font-size: large;
+}
+
+.friends-display-header span {
+  margin: 0px 10px;
+}
+
+.fa-info-circle {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.fa-arrow-right {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+.friends-screen__channel-header {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  margin-bottom: 20px;
 }

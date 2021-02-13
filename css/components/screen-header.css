@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
+  padding: var(--horizontal-space);
   padding-top: 45px;
 }
 
 .screen-header__title {
-  font-size: 42px;
-  font-weight: 900;
+  font-size: 32px;
+  font-weight: 600;
 }
 
 .screen-header__icons span {

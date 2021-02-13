@@ -1,0 +1,61 @@
+.user-component {
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.user-component,
+.user-component__column:first-child {
+  display: flex;
+  align-items: center;
+}
+.user-component__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+.user-component__title {
+  font-weight: 600;
+  font-size: 22px;
+}
+.user-component__subtitle {
+  margin-top: 8px;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.user-component__avatar--xl {
+  width: 80px;
+  height: 80px;
+}
+
+.user-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+
+.user-component__title--not-bold {
+  font-weight: 400;
+}
+
+/* 본인이 flex의 개념을 이해하고있는지 
+테스트하고 싶다면 7:12에서 멈추고 직접 만들어보자.
+flex의 영향을 받고싶지 않은 녀석들은 div를 하나 더씌워서
+ 부모-자식관계를 끊고 부모-손자 관계를 만든다. */
+
+.user-component__column:last-child {
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.user-component__subtitle {
+  margin-top: 15px;
+}
+
+.user-component__time {
+  margin-bottom: 5px;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WelCome to Kokoa Talk</title>
+    <link rel="stylesheet" href="assignment7.css" />
+    <script
+      src="https://kit.fontawesome.com/fbb6dbb472.js"
+      crossorigin="anonymous"
+    >
+      $('input[type=range]').on('input', function(){
+            var val = $(this).val();
+            $(this).css('background', 'linear-gradient(to right, dodgerblue 0%, dodgerblue '+ val +'%, #d5d4d3 ' + val + '%, #d5d4d3 100%)');
+          });
+    </script>
+  </head>
+  <body>
+    <header class="wrapper_1">
+      <!-- 상단바 -->
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <i class="fas fa-arrow-left"></i>
+          <!-- 아이콘을 넣는 방법? 직접 이미지 넣기, or svg 파일형식(좌표 형식으로 되어있는 이미지.)
+          Heroicons 라는 사이트에서, 많은 icon을 제공한다.
+          FontAwsome이라는 사이트에서 매우많은 icon을 제공한다 -->
+        </div>
+        <div class="status-bar__column"></div>
+        <div class="status-bar__column">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      <!-- 메인노래 -->
+      <div class="artist">
+        <img
+          class="artist__image"
+          src="https://image.bugsm.co.kr/artist/images/1000/802062/80206219.jpg"
+        />
+
+        <h2>Justhis</h2>
+        <h4>Rap,Hiphop,mixing</h4>
+      </div>
+
+      <!-- 버튼 두개 -->
+      <div class="btn">
+        <div class="btn__shuffle">
+          <span>shuffle</span>
+        </div>
+        <div class="btn__like">
+          <div><i class="fas fa-heart"></i></div>
+          <span> 212,971</span>
+        </div>
+      </div>
+      <!-- 플레이리스트 -->
+      <footer class="playlist">
+        <div class="playlist__column">
+          <div class="playlist__image">
+            <img
+              src="https://images.genius.com/909659c6b9e9cfc58e3d77bb3b442fe8.1000x1000x1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="playlist__title">
+            <span>Superbee</span>
+            <span>Selfmade-Orange</span>
+          </div>
+          <div class="playlist__menu"><i class="fas fa-ellipsis-v"></i></div>
+        </div>
+        <div class="playlist__column">
+          <div class="playlist__image">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqHW7HrOWN32ISThu-bAXr6lccEbM2tSBdDQ&usqp"
+              alt=""
+            />
+          </div>
+          <div class="playlist__title">
+            <span>Superbee</span>
+            <span>Selfmade-Orange 2</span>
+          </div>
+          <div class="playlist__menu"><i class="fas fa-ellipsis-v"></i></div>
+        </div>
+
+        <div class="playlist__column">
+          <div class="playlist__image">
+            <img
+              src="http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/867/444/81867444_1611726218872_1_600x600.JPG"
+              alt=""
+            />
+          </div>
+          <div class="playlist__title">
+            <span>I U</span>
+            <span>Celebrity</span>
+          </div>
+          <div class="playlist__menu"><i class="fas fa-ellipsis-v"></i></div>
+        </div>
+
+        <div class="playlist__column">
+          <div class="playlist__image">
+            <img
+              src="https://i1.sndcdn.com/artworks-000145461866-1c6xi8-t500x500.jpg"
+              alt=""
+            />
+          </div>
+          <div class="playlist__title">
+            <span>우리동네음악대장</span>
+            <span>Lazenca,Save us</span>
+          </div>
+          <div class="playlist__menu"><i class="fas fa-ellipsis-v"></i></div>
+        </div>
+      </footer>
+
+      <!-- 재생 -->
+      <div class="playbar">
+        <div class="playbar__title">
+          <span>Superbee</span>
+          <span>Selfmade-Orange2</span>
+        </div>
+        <div class="playbar__btn">
+          <i class="fas fa-step-backward fa-lg"></i>
+          <i class="fas fa-play fa-lg"></i>
+          <i class="fas fa-step-forward fa-lg"></i>
+        </div>
+      </div>
+    </header>
+
+    <header class="wrapper_2">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <i class="fas fa-arrow-left"></i>
+          <!-- 아이콘을 넣는 방법? 직접 이미지 넣기, or svg 파일형식(좌표 형식으로 되어있는 이미지.)
+              Heroicons 라는 사이트에서, 많은 icon을 제공한다.
+              FontAwsome이라는 사이트에서 매우많은 icon을 제공한다 -->
+        </div>
+        <div class="status-bar__column"></div>
+        <div class="status-bar__column">
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </div>
+      <!-- 앨범아트 -->
+      <div class="album__image">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqHW7HrOWN32ISThu-bAXr6lccEbM2tSBdDQ&usqp"
+          alt=""
+        />
+      </div>
+      <!-- 곡 제목 -->
+      <div class="album__title">
+        <h2>Superbee</h2>
+        <h4>Selfmade-Orange2</h4>
+      </div>
+      <div class="timer">
+        <div>
+          <span>1:56</span>
+        </div>
+        <div><span>2:21</span></div>
+      </div>
+      <input type="range" value="70" />
+      <div class="album__btn">
+        <div><i class="fas fa-sliders-h fa-lg"></i></div>
+        <div><i class="fas fa-step-backward fa-lg"></i></div>
+        <div><i class="fas fa-play-circle fa-4x"></i></div>
+        <div><i class="fas fa-step-forward fa-lg"></i></div>
+        <div><i class="fas fa-random fa-lg"></i></div>
+      </div>
+    </header>
+  </body>
+</html>
