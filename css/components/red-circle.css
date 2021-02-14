@@ -1,0 +1,12 @@
+.red-circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: tomato;
+}
+
+.notification__circle {
+  position: absolute;
+  right: -10%;
+  top: -30%;
+}

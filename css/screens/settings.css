@@ -1,0 +1,42 @@
+.settings__setting {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings__setting:nth-child(3) {
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.settings__setting .settings__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  opacity: 0.8;
+  margin-right: 20px;
+}
+
+.settings__setting .settings__column:nth-child(2) {
+  color: gray;
+}
+.settings__column {
+  display: flex;
+  align-items: center;
+}
+
+.settings__column:nth-child(1) .red-circle {
+  position: relative;
+  right: 10px;
+  bottom: 10px;
+}
+
+.settings__badge {
+  margin-left: 10px;
+  font-size: 80%;
+  width: 25px;
+  height: 25px;
+}

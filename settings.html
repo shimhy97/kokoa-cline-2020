@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KokoaTalk-Settings</title>
+    <link rel="stylesheet" href="css/main__style.css" />
+    <script
+      src="https://kit.fontawesome.com/fbb6dbb472.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- 최상단 창 -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <i class="fas fa-bolt fa-lg"></i>
+      </div>
+    </div>
+    <!-- 네비게이션 창 -->
+    <nav class="nav">
+      <ul class="nav__ul">
+        <!-- 아이콘에 링크를 적용해보자.
+        기본적으로 모든 링크는 파란색, 그리고 밑줄 데코레이션을 가지고 있다. 
+        물론 css창에서 일일이 지정해줘도 되지만, reset.css에 박아놓으면 편하다.-->
+        <li class="nav__link">
+          <a href="friends.html"><i class="far fa-user fa-lg"></i></a>
+        </li>
+        <li class="nav__link">
+          <span class="nav__notification badge">1</span>
+          <a href="chats.html"><i class="far fa-comments fa-lg"></i></a>
+        </li>
+        <li class="nav__link">
+          <a href="find.html"><i class="fas fa-search fa-lg"></i></a>
+        </li>
+        <li class="nav__link">
+          <a href="more.html"><i class="fas fa-ellipsis-h fa-lg"></i></a>
+          <div class="notification__circle red-circle"></div>
+        </li>
+      </ul>
+    </nav>
+    <!-- 세팅 상단바 -->
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <i class="fas fa-angle-left fa-2x"></i>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Settings</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+      </div>
+    </header>
+    <!-- 세팅 리스트 -->
+    <main class="main-screen">
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__column">
+            <div class="settings__icon">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <div class="notification__circle red-circle"></div>
+            <span>공지</span>
+          </div>
+
+          <div class="settings__column">최신 공지</div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__column">
+            <div class="settings__icon">
+              <i class="fas fa-flask"></i>
+            </div>
+            <span>실험실</span>
+          </div>
+          <div class="settings__column">실험실 이동</div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__column">
+            <div class="settings__icon">
+              <i class="fas fa-info-circle"></i>
+            </div>
+
+            <span>버젼</span>
+          </div>
+          <div class="settings__column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__column">
+            <div class="settings__icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <span>보안</span>
+          </div>
+          <div class="settings__column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__column">
+            <div class="settings__icon">
+              <i class="fas fa-bell"></i>
+            </div>
+            <span>알림 설정</span>
+          </div>
+          <div class="settings__column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__column">
+            <div class="settings__icon">
+              <i class="far fa-user"></i>
+            </div>
+            <span>공개 범위</span>
+          </div>
+          <div class="settings__column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__column">
+            <div class="settings__icon">
+              <i class="far fa-comments"></i>
+            </div>
+            <span>채팅방 설정</span>
+          </div>
+          <div class="settings__column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__column">
+            <div class="settings__icon">
+              <i class="far fa-sun"></i>
+            </div>
+            <span>화면</span>
+            <div class="settings__badge badge">N</div>
+          </div>
+          <div class="settings__column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__column">
+            <div class="settings__icon">
+              <i class="fas fa-brush"></i>
+            </div>
+            <span>메인 테마</span>
+            <div class="settings__badge badge">N</div>
+          </div>
+          <div class="settings__column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__column">
+            <div class="settings__icon">
+              <i class="fas fa-phone-volume"></i>
+            </div>
+            <span>전화</span>
+          </div>
+          <div class="settings__column"></div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

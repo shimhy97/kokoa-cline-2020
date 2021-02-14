@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KokoaTalk-Chattingroom</title>
+    <link rel="stylesheet" href="css/main__style.css" />
+    <script
+      src="https://kit.fontawesome.com/fbb6dbb472.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="chat-screen">
+    <!-- 최상단 창 -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <i class="fas fa-bolt fa-lg"></i>
+      </div>
+    </div>
+
+    <!-- 대화상대 상단바 -->
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html" class="">
+          <i class="fas fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">아이유</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+    <main class="main-screen">
+      <div class="chatting-date">
+        <div class="chatting-date__column">
+          <span> 2021년 02월 14일</span>
+        </div>
+      </div>
+      <!-- 수신 메시지 -->
+      <div class="chatting-row__receive">
+        <img
+          class="chatting-row__img"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5pdslPdGevIoiObvxsfh7QiFsHKPoIl0m2A&usqp=CAU"
+          alt=""
+        />
+        <!-- 보낸 사람과 메시지 -->
+        <div class="chatting-row__message__receive">
+          <div class="message__receive__author">
+            <h3>아이유</h3>
+          </div>
+          <div class="message__column">
+            <div class="message__receive__bubble">
+              <span>안녕?</span>
+            </div>
+            <div class="message__time message__author"><span>21:27</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 내가 보낸 메시지-->
+      <div class="chatting-row__send">
+        <div class="message__column">
+          <div class="message__send__bubble"><span>무슨 일이야?</span></div>
+          <div class="message__time message__author"><span>21:27</span></div>
+        </div>
+      </div>
+
+      <!-- 수신 메시지 -->
+      <div class="chatting-row__receive">
+        <img
+          class="chatting-row__img"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5pdslPdGevIoiObvxsfh7QiFsHKPoIl0m2A&usqp=CAU"
+          alt=""
+        />
+
+        <div class="chatting-row__message__receive">
+          <!-- 보낸 사람 -->
+          <div class="message__receive__author">
+            <h3>아이유</h3>
+          </div>
+          <div class="message__column">
+            <div class="message__receive__bubble">
+              <span>그냥 심심해서 ㅎㅎ</span>
+            </div>
+            <div class="message__time message__author"><span>21:28</span></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- 메시지 입력 창 -->
+    <form class="reply">
+      <div class="reply__plus-btn fa-2x">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="reply-bar">
+        <input placeholder="메시지를 입력하세요.." />
+        <div class="enmoji-btn">
+          <i class="far fa-laugh fa-2x"></i>
+        </div>
+        <div class="send-button">
+          <i class="fas fa-arrow-up fa-lg"></i>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

@@ -2,45 +2,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap");
-
+@import "reset.css";
 @import "variables.css";
 /* 브라우저의 기본으로 들어있는 css를 삭제!시키는 css파일이다. 우리가 직접 디자인 하는것도 좋은 방법이니깐.
 html에 직접 추가해도 되지만 가급적 css에 css를 직접 추가하는 게 낫다고 한다. */
 /* import 하는 순서도 매우매우 중요하다! */
-@import "reset.css";
 @import "components/status-bar.css";
 @import "components/navigation.css";
 @import "components/screen-header.css";
 @import "components/user-component.css";
+@import "components/badge.css";
+@import "components/red-circle.css";
+@import "components/icons-menu.css";
+@import "components/alt-screen-header.css";
 @import "screens/login.css";
 @import "screens/friend.css";
-
-@import "components/badge.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chatting.css";
 body {
   font-family: "Blinker", sans-serif;
   margin: 5px;
+  height: 110vh;
   background-color: whitesmoke;
 }
 
+.main-screen {
+  padding: 0 var(--horizontal-space);
+}
+#splash-screen {
+  z-index: 3;
+  background-color: #f7e600;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 1s;
+}
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 /* chat 창의 usercomponent 변형 */
-.user-component__column:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.user-component__message-num {
-  position: relative;
-  margin-top: 5px;
-  left: 1px;
-  display: flex;
-  color: white;
-  align-items: center;
-  justify-content: center;
-  background-color: tomato;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-}
 /* 여기부분 참고해라!! */

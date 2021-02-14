@@ -12,6 +12,10 @@
     ></script>
   </head>
   <body>
+
+    <div id="splash-screen">
+      <i class="fas fa-comment"></i>
+    </div>
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No service</span>
@@ -38,6 +42,9 @@
           <a href="friends.html"><i class="fas fa-user fa-lg"></i></a>
         </li>
         <li class="nav__link">
+          <!-- - 한 개의 element에서 두 개 이상의 class를 가질 수도 있다.
+          badge 부분은 공통 부분이니 컴포넌트로 빼고, 위치 선정에 대한 클래스를 따로
+         만들어서 nav__notification으로 적용했다.  -->
           <span class="nav__notification badge">1</span>
           <a href="chats.html"><i class="far fa-comments fa-lg"></i></a>
         </li>
@@ -46,6 +53,7 @@
         </li>
         <li class="nav__link">
           <a href="more.html"><i class="fas fa-ellipsis-h fa-lg"></i></a>
+          <div class="notification__circle red-circle"></div>
         </li>
       </ul>
     </nav>
@@ -55,18 +63,18 @@
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <span><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a></a></span>
       </div>
     </header>
 
     <div class="friends-display-header">
       <span><i class="fas fa-info-circle"></i></span>
-      <span>Friends' Names Display</span>
+      <span>친구 이름 표시</span>
       <span><i class="fas fa-arrow-right"></i></span>
     </div>
 
     <!-- 유저 속성 창 -->
-    <main class="friends-screen">
+    <main class="main-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
@@ -80,9 +88,29 @@
         </div>
         <div class="user-component__column"></div>
       </div>
+
+<!-- 아이유 -->
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5pdslPdGevIoiObvxsfh7QiFsHKPoIl0m2A&usqp=CAU"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">아이유</h4>
+            <h6 class="user-component__subtitle">'celebrity'</h6>
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      
+
+
+      
+        <!-- 채널 목록 -->
       <div class="friends-screen__channel">
         <div class="friends-screen__channel-header">
-          <span>Channel</span>
+          <span>채널</span>
           <i class="fas fa-chevron-up fa-xs"></i>
         </div>
         <div class="user-component">
@@ -92,7 +120,7 @@
               class="user-component__avatar user-component__avatar--sm"
             />
             <div class="user-component__text">
-              <h4 class="user-component__title">Channel</h4>
+              <h4 class="user-component__title">채널</h4>
             </div>
           </div>
           <div class="user-component__column">
@@ -102,6 +130,8 @@
             </div>
           </div>
         </div>
+
+       
       </div>
     </main>
   </body>
