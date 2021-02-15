@@ -17,9 +17,3 @@
 .screen-header__icons span {
   margin-left: 25px;
 }
-
-.notification__circle {
-  position: absolute;
-  right: -10%;
-  top: -30%;
-}

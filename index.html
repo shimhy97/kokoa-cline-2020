@@ -44,7 +44,8 @@
       </h3>
     </header>
 
-    <form class="login-form">
+    <!-- 로그인 폼 -->
+    <form class="login-form" action="friends.html">
       <label for="login-ID"></label>
       <input
         id="login-ID"
@@ -59,14 +60,19 @@
         placeholder="Password"
         type="password"
       />
-      <a href="friends.html">
-        <label for="login-submit"></label>
+      <!-- 문제가 생기는 부분. -->
 
-        <input id="login-submit" type="submit" value="Log In" />
-      </a>
-      <label for="login-signup"></label>
-      <input id="login-signup" type="submit" value="Sign Up" />
+      <input type="submit" value="Log-in" />
+
+      <div class="login-btn">
+        <label for="login-signup"></label>
+        <input id="login-signup" type="submit" value="Sign Up" />
+      </div>
       <a href="friends.html">Find Kakao Account or Password</a>
     </form>
+
+    <div id="big-screen-prevent">
+      <span>핸드폰 전용 어플리케이션 입니다.</span>
+    </div>
   </body>
 </html>

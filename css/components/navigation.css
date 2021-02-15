@@ -21,7 +21,7 @@
 .nav__notification {
   /* 여길 보고 느끼는거 없냐?
     1. absolute의 원리*/
-
+  animation: Messagenumber 1s ease-in-out infinite;
   position: absolute;
   left: 15px;
   top: -15px;

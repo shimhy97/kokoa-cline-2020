@@ -13,6 +13,9 @@
   </head>
 
   <body id="chat-screen">
+    <div class="big-screen-prevent">
+      <span>핸드폰 전용 어플리케이션 입니다.</span>
+    </div>
     <!-- 최상단 창 -->
     <div class="status-bar">
       <div class="status-bar__column">
@@ -51,6 +54,7 @@
           <span> 2021년 02월 14일</span>
         </div>
       </div>
+
       <!-- 수신 메시지 -->
       <div class="chatting-row__receive">
         <img
@@ -104,9 +108,9 @@
     </main>
     <!-- 메시지 입력 창 -->
     <form class="reply">
-      <div class="reply__plus-btn fa-2x">
-        <i class="far fa-plus-square"></i>
-      </div>
+      <span class="reply__plus-btn">
+        <i class="far fa-plus-square fa-2x"></i>
+      </span>
       <div class="reply-bar">
         <input placeholder="메시지를 입력하세요.." />
         <div class="enmoji-btn">

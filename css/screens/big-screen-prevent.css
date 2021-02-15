@@ -1,0 +1,34 @@
+#big-screen-prevent {
+  font-size: xx-large;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  background-color: #f7e600;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#big-screen-prevent span {
+  animation: big-screen 1s ease-in-out infinite;
+}
+@keyframes big-screen {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #big-screen-prevent {
+    display: none;
+  }
+}

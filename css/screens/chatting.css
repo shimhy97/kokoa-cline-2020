@@ -154,3 +154,42 @@
   background-color: #f7e600;
   border-radius: 50%;
 }
+
+@keyframes Fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+main .chatting-row__receive:nth-child(2) {
+  animation: Fade-in 1s linear forwards;
+}
+.chatting-row__send {
+  animation: Fade-in 1.5s linear forwards;
+}
+
+main .chatting-row__receive:last-child {
+  animation: Fade-in 2s linear forwards;
+}
+
+/* 애니메이션 적용~reply bar */
+.reply:focus-within .reply__plus-btn,
+.reply:focus-within .enmoji-btn,
+.reply:focus-within .send-button {
+  opacity: 0;
+}
+
+.reply:focus-within .reply-bar {
+  width: 1000vw;
+}
+.reply:focus-within .reply {
+  position: absolute;
+
+  transform: translateY(20px);
+}
+.reply-bar {
+  transition: all 0.1s ease-in-out;
+}
